@@ -1,4 +1,7 @@
-var name = "dubu";
-var isMarried = false;
-var members = ["kim", "lee"];
-var member = { member1: "kim", member2: "lee" };
+// union Type
+var members = ["kim", "lee", undefined];
+var member = { member1: 4, member2: "lee" };
+// any Type
+// let anyTypeTest: any = 9;
+// anyTypeTest = "st";
+// anyTypeTest = false;
