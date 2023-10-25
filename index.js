@@ -1,7 +1,7 @@
 // union Type
-var members = ["kim", "lee", undefined];
-var member = { member1: 4, member2: "lee" };
+// const members: (string | undefined)[] = ["kim", "lee", undefined];
+// const member: { member1: string | number; member2: string } = { member1: 4, member2: "lee" };
 // any Type
-// let anyTypeTest: any = 9;
-// anyTypeTest = "st";
-// anyTypeTest = false;
+var anyTypeTest = 9;
+anyTypeTest = "st";
+anyTypeTest = false;
