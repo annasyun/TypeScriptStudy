@@ -1,10 +1,10 @@
-// void: return할 자료가 없는 함수의 타입으로 사용가능
-
-function func1(param: number): void {
-  param + 1;
+// narrowing
+function 내함수(x: number | string) {
+  if (typeof x === "number") {
+    return x + 1;
+  } else if (typeof x === "string") {
+    return x + 1;
+  } else {
+    return 0;
+  }
 }
-
-// 파라미터가 옵션일 경우 = x : number | undefined와 의미가 동일
-function 파라미터가옵션인경우테스트함수(x?: number) {}
-파라미터가옵션인경우테스트함수(); //가능
-파라미터가옵션인경우테스트함수(2); //가능
