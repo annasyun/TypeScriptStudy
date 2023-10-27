@@ -1,12 +1,5 @@
-// narrowing
+//Type Assertion<-버그 잡기 힘들기 때문에 지양
 function 내함수(x) {
-    if (typeof x === "number") {
-        return x + 1;
-    }
-    else if (typeof x === "string") {
-        return x + 1;
-    }
-    else {
-        return 0;
-    }
+    return x + 1;
 }
+console.log(내함수(123));
