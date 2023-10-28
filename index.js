@@ -1,2 +1,3 @@
-var animal;
-var pet = { name: "dubu", age: 9 };
+//Literal Types
+var 방향;
+방향 = "left";
