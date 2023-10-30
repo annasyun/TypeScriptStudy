@@ -1,18 +1,5 @@
-// narrowing 사용
-var 제목 = document.querySelector('#title');
-if (제목 != null) {
-    제목.innerHTML = '반갑소';
-}
-// instanceof 사용하는 narrowing 방법
-var 제목 = document.querySelector("#title");
-if (제목 instanceof HTMLElement) {
-    제목.innerHTML = "반갑소";
-}
-// 지양해야 하는 assertion 문법 사용하는 방법
-var 제목 = document.querySelector('#title');
-제목.innerHTML = '반갑소';
-//optional chaining 연산자 사용
-var 제목 = document.querySelector('#title');
-if ((제목 === null || 제목 === void 0 ? void 0 : 제목.innerHTML) != undefined) {
-    제목.innerHTML = '반갑소';
+// a타입 선택자 HTML 변경하는 방법
+var 링크 = document.querySelector('#link');
+if (링크 instanceof HTMLAnchorElement) {
+    링크.href = 'https://kakao.com'; //잘됨
 }
