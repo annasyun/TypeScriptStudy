@@ -1,11 +1,5 @@
-interface Student {
-  name: string;
-}
-interface Teacher extends Student {
-  age: number;
-}
-//type intersection
-type Animal = { 
-    name :string 
-  } 
-  type Cat = Animal & { legs: number }
+function 전부더하기(...a :number[]){
+    console.log(a)
+  }
+  
+  전부더하기(1,2,3,4,5)
