@@ -1,8 +1,6 @@
-function 전부더하기() {
-    var a = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        a[_i] = arguments[_i];
-    }
-    console.log(a);
+var person = { student: true, age: 20 };
+function 함수(_a) {
+    var student = _a.student, age = _a.age;
+    console.log(student, age);
 }
-전부더하기(1, 2, 3, 4, 5);
+함수({ student: true, age: 20 });
