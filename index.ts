@@ -1,6 +1,5 @@
-let person = { student : true, age : 20 }
-
-function 함수({student, age} :{student : boolean, age : number}){
-  console.log(student, age)
+function printAll(strs: string | undefined) {
+  if (strs && typeof strs === "string") {  
+    console.log(s);
+  } 
 }
-함수({ student : true, age : 20 })
